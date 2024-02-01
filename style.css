@@ -7,6 +7,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+/* header {
+  border: 2px solid #1A1B21;
+} */
 header ul {
   list-style: none;
 }
@@ -38,16 +41,22 @@ header ul li a {
 } */
 .logo img {
   width: 10rem;
-  padding-top: 0.4rem;
+  padding-top: 0.2rem;
 }
 nav {
   display: none;
+  padding-top: none;
+}
+nav a {
+  margin: 0.3rem;
+}
+nav ul li a:hover {
+  background-color: aqua;
 }
 .cta img {
   width: 1.2rem;
-  margin: 0.3rem;
-  vertical-align: middle;
-  padding-top: 0;
+  margin-left: 0.3rem;
+  /* margin: 0.3rem; */
   cursor: pointer;
 }
 header {
@@ -65,7 +74,18 @@ header {
   justify-content: space-between;
 }
 
+
+
+
+
+
+
+
 /*   Images Display  */
+.first-cloth-display {
+  margin-top: 0rem;
+  /* border:  2px solid darkred; */
+}
 .catalog-with-img-slider {
   margin-inline: 0.5rem;
   /* border: 2px solid rebeccapurple; */
@@ -131,7 +151,7 @@ header {
   background: url(images/full-shot-woman-with-pink-outfit.jpg);
   background-size: cover;
   background-position: center;
-  border-radius: 47px;
+  border-radius: 27px;
 }
 .second-column-row2 {
   position: relative;
@@ -141,7 +161,7 @@ header {
   background: url(images/medium-shot-smiley-women-posing.jpg);
   background-size: cover;
   background-position: center;
-  border-radius: 47px;
+  border-radius: 27px;
   margin-top: 0.5rem;
 }
 .second-column-row3 {
@@ -150,7 +170,7 @@ header {
   width: 97%;
   /* border: 2px solid darkgoldenrod; */
   background-color: #1A1B21;
-  border-radius: 47px;
+  border-radius: 27px;
   margin-top: 0.5rem;
 }
 .image-container-arrow {
@@ -180,11 +200,21 @@ header {
   line-height: 25px;
   letter-spacing: 5px;
 }
+.third-column {
+  display: none;
+}
 
+@media (min-width:500px) {
+  .cta img {
+    width: 1.2rem;
+    margin-left: 1.3rem;
+    /* margin: 0.3rem; */
+  }
+}
 @media  (min-width:600px) {
   .first-cloth-display {
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   .second-column {
     width: 40%;
@@ -210,34 +240,14 @@ header {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 1180px) {
+  .logo img {
+    width: 10rem;
+    padding-top: 0.25rem;
+  }
   nav {
     display: block;
+    /* padding-top: 0.5rem; */
   }
   .button-d {
     display: none;
@@ -248,12 +258,44 @@ header {
   }
   .cta img {
     width: 1.1rem;
-    margin: 0.5rem;
+    margin-left: 1.5rem;
+    /* margin: 0.5rem; */
   }
-}
 /* @media (min-width:1280px) {
     .cta img {
         width: 1.1rem;
         margin: 0.5rem;
     }
-} */
+  */
+
+  /* columns */
+  .first-cloth-display {
+    width: 94%;
+    margin: 2rem auto;
+  }
+  .second-column {
+    width: 25%;
+    margin-top: 0rem;
+  }
+  .catalog-with-img-slider {
+    width: 35%;
+  }
+  .third-column {
+    display: block;
+    height: 615px;
+    width: 40%;
+    background: url(images/neighborhood-lifestyle-friends.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 27px;
+    /* border: 2px solid gold; */
+    color: #1A1B21;
+  }
+  .third-column img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
