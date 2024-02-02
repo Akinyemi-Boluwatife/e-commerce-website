@@ -10,9 +10,6 @@ body {
 /* header {
   border: 2px solid #1A1B21;
 } */
-
-
-
 header ul {
   list-style: none;
 }
@@ -54,7 +51,7 @@ nav a {
   margin: 0.3rem;
 }
 nav ul li a:hover {
-  background-color: aqua;
+  border-bottom: 2px solid gray;
 }
 .cta img {
   width: 1.2rem;
@@ -63,7 +60,11 @@ nav ul li a:hover {
   cursor: pointer;
 }
 header {
-  padding: 1rem 0.5rem;
+  /* padding: 1rem 0.5rem; */
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 0.2rem;
   /* border:  1px solid yellow; */
   display: flex;
   justify-content: center;
